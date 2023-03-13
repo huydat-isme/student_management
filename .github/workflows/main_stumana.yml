@@ -4,9 +4,7 @@
 
 name: Build and deploy Python app to Azure Web App - stumana
 
-name: Install dependencies
- 
- run: pip install -r requirements.txt
+
 
 on:
   push:
@@ -65,3 +63,4 @@ jobs:
           app-name: 'stumana'
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A7CF2DBEEC3E416AB3C1A100556A960D }}
+
